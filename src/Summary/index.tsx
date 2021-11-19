@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {GoFile, GoNote, GoGraph} from 'react-icons/go';
-import api from '../../services/api';
+import api from '../services/api';
 import {Container} from './styles';
 
 interface Activy {
