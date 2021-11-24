@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
-:root {
+    :root {
         --background: #bdbebd;
         --green: #3CB371;
         --greenDark: #135832;
@@ -62,9 +62,9 @@ export default createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
-            
+                
 .react-modal-content {
     width: 100%;    
     max-width: 576px;
@@ -82,7 +82,7 @@ export default createGlobalStyle`
     background: transparent;
 
     transition: filter 0.2s;
-
+    
     &:hover {
         filter: brightness(0.6);
     }

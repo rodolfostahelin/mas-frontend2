@@ -22,7 +22,7 @@ export const Container = styled.div`
                 font-weight: bold;
             }
         }
-
+        
 
         strong {
             display: block;

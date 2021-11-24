@@ -29,12 +29,7 @@ export function Dashboard() {
         setIsNewCourseUnitModalOpen(false);
     }
 
-    // const Contexto = createContext({
-    //     atualiza: 0,
-    //     setAtualiza: () => { }
-    // });
-    // const [atualiza, setAtualiza] = useState(0);
-    // const value = {atualiza, setAtualiza};
+    
 
     return (
         <>

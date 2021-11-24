@@ -61,11 +61,11 @@ export function NewActivyModal({isOpen, onRequestClose}:NewActivyModalProps) {
                 <form onSubmit={onSubmit}>
                     <select {...register("courseUnitId")}>
                         <option selected value="">Selecione a Unidade Curricular</option>
-                        {courseUnits.map(courseUnit => {
-                            return (
-                                <option value={courseUnit.id}>{courseUnit.name}</option>
-                            )
-                        })}
+                        {courseUnits.map(function (courseUnit) {
+                                return (
+                                    <option value={courseUnit.id}>{courseUnit.name}</option>
+                                );
+                            })}
                     </select>
                     {errors.courseUnitId && <Error>O prenchimento do campo é obrigatório</Error>}
                     <input 

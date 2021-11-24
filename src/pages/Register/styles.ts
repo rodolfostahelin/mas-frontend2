@@ -96,14 +96,14 @@ export const InputContainer = styled.div`
     svg {
         margin-right: 16px;
     }
-
+    
 `;
 
-export const Error = styled.span `
+export const Error = styled.span`
     font-size: 0.9rem;
     font-weight: bold;
     color: coral;
-`
+`;
 
 export const Background = styled.div`
   flex: 1;

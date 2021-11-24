@@ -8,6 +8,7 @@ export const Content = styled.div`
     max-width: 1120px;
     margin: 0 auto;
 
+
     padding: 2rem 1rem 12rem;
     display: flex;
     align-items: center;
@@ -31,7 +32,7 @@ export const Content = styled.div`
         height: 3rem;
 
         transition: filter 0.2s;
-
+        
         &:hover {
             filter: brightness(0.8);
         }
@@ -39,9 +40,18 @@ export const Content = styled.div`
         & + button {
             margin-left: 10px;
         }
-
+        & + :last-child {
+            color: #fff;
+            background: transparent;
+        }
         }
     }
-
-    
 `;
+
+export const ButtonOut = styled.button`
+    position: relative;
+    margin-top: 1rem;
+    color: #fff;
+    background: transparent;
+    border: 0;
+`

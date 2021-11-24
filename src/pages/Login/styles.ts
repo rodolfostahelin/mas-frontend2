@@ -45,7 +45,7 @@ export const FormContainer = styled.div`
         }
     }
 
-
+    
     > a {
     color: #3CB371;
     display: block;
@@ -103,7 +103,7 @@ export const Error = styled.span`
     font-size: 0.9rem;
     font-weight: bold;
     color: coral;
-`
+`;
 
 export const Background = styled.div`
   flex: 1;
