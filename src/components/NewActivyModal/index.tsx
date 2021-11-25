@@ -31,9 +31,8 @@ export function NewActivyModal({isOpen, onRequestClose}:NewActivyModalProps) {
     useEffect(() => {
         api.get('/courseunit')
             .then(response => {
+                console.log(response.data)
                 setCourseUnits(response.data)
-
-
             })
     },[])
 
@@ -60,12 +59,12 @@ export function NewActivyModal({isOpen, onRequestClose}:NewActivyModalProps) {
                 </button>
                 <form onSubmit={onSubmit}>
                     <select {...register("courseUnitId")}>
-                        <option selected value="">Selecione a Unidade Curricular</option>
-                        {courseUnits.map(function (courseUnit) {
-                                return (
-                                    <option value={courseUnit.id}>{courseUnit.name}</option>
-                                );
-                            })}
+                        <option selected value="">Selecione Unidade Curricular</option>
+                        {courseUnits.map(courseUnit => {
+                            return (
+                                <option value={courseUnit.id}>{courseUnit.name}</option>
+                            )
+                        })}
                     </select>
                     {errors.courseUnitId && <Error>O prenchimento do campo é obrigatório</Error>}
                     <input 

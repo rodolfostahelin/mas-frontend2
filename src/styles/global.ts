@@ -38,7 +38,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        font-family: serif;
+        font-family: sans-serif;
         font-size: 16px;
     }
 
